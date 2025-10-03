@@ -23,8 +23,9 @@ const EmailVerification = () => {
         await verifyEmail(token);
         setVerificationStatus("success");
         setTimeout(() => navigate("/login"), 3000);
-      } catch (err) {
+      } catch(error) {
         setVerificationStatus("error");
+        console.error(error);
       }
     };
 

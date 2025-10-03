@@ -6,6 +6,8 @@ import Dashboard from "./pages/Dashboard";
 import EmailVerification from "./pages/EmailVerification";
 import OAuthCallback from "./pages/OAuthCallback";
 import { useAuthStore } from "./store/useAuthStore";
+import ResetPasswordForm from "./pages/ResetPasswordForm";
+import ForgotPasswordForm from "./pages/ForgotPasswordForm";
 
 // Enhanced ProtectedRoute with loading state
 const ProtectedRoute = ({ children }) => {
